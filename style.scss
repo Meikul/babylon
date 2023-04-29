@@ -13,7 +13,26 @@ body{
 
 .title {
   font-family: 'Raleway';
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
   color: white;
+}
+
+.subtitle {
+  font-family: 'Raleway';
+  width: 100%;
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
 }
 
 .coin {
@@ -22,6 +41,9 @@ body{
   height: 300px;
   // border: 1px solid #eeeeee;
   perspective: 1000px;
+}
+.coin-right {
+  align-self: flex-end;
 }
 .coin-inner {
   position: relative;
@@ -32,7 +54,7 @@ body{
   transform-style: preserve-3d;
 }
 .coin:hover .coin-inner {
-  transform: rotateX(180deg);
+  // transform: rotateX(180deg);
 }
 .coin-front,
 .coin-back {

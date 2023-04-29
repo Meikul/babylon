@@ -11,7 +11,30 @@ body {
 
 .title {
   font-family: 'Raleway';
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
   color: white;
+}
+
+.subtitle {
+  font-family: 'Raleway';
+  width: 100%;
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 50px;
 }
 
 .coin {
@@ -20,6 +43,11 @@ body {
   height: 300px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+
+.coin-right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .coin-inner {
@@ -33,11 +61,6 @@ body {
   transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-}
-
-.coin:hover .coin-inner {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
 }
 
 .coin-front,
