@@ -23,13 +23,46 @@ body{
   font-family: 'Raleway';
   width: 100%;
   text-align: center;
-  margin-bottom: 90px;
   font-size: 1.5rem;
   color: white;
 }
 
+.lower-sub {
+  margin-bottom: 90px;
+}
+
+
+.tooltip {
+  position: absolute;
+  display: block;
+  font-family: 'Source Sans Pro';
+  font-size: 15pt;
+  top: 125px;
+  left: 300px;
+  width: 157px;
+  padding: 10px;
+  transform: translate(15px, -50%);
+  background: rgba($color: white, $alpha: 0.2);
+  color: white;
+  border-radius: 3px;
+  opacity: 0.8;
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    // height: 14px;
+    // width: 7px;
+    border-right: 7px solid rgba($color: white, $alpha: 0.2);
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+}
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 50px;
@@ -43,6 +76,7 @@ body{
   // border: 1px solid #eeeeee;
   perspective: 1000px;
 }
+
 .coin-right {
   align-self: flex-end;
 }

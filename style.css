@@ -21,12 +21,46 @@ body {
   font-family: 'Raleway';
   width: 100%;
   text-align: center;
-  margin-bottom: 90px;
   font-size: 1.5rem;
   color: white;
 }
 
+.lower-sub {
+  margin-bottom: 90px;
+}
+
+.tooltip {
+  position: absolute;
+  display: block;
+  font-family: 'Source Sans Pro';
+  font-size: 15pt;
+  top: 125px;
+  left: 300px;
+  width: 157px;
+  padding: 10px;
+  -webkit-transform: translate(15px, -50%);
+          transform: translate(15px, -50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+.tooltip::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-right: 7px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 7px solid transparent;
+  border-top: 7px solid transparent;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
 .content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
